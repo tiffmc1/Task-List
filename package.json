@@ -1,0 +1,41 @@
+{
+	"name": "task-list",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server/index.js",
+	"scripts": {
+		"start:dev": "npm run start-server & npm run build:dev",
+		"start-server": "nodemon server --ignore public/ --ignore client/",
+		"build:dev": "npm run build -- --watch --mode=development",
+		"build": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tiffmc1/Task-List.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.3",
+		"morgan": "^1.10.0",
+		"pg": "^8.7.3",
+		"sequelize": "^6.16.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.17.5",
+		"@babel/preset-react": "^7.16.7",
+		"axios": "^0.26.0",
+		"babel-loader": "^8.2.3",
+		"nodemon": "^2.0.15",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-redux": "^7.2.6",
+		"react-router-dom": "^5.2.0",
+		"redux": "^4.1.2",
+		"redux-logger": "^3.0.6",
+		"redux-thunk": "^2.4.1",
+		"webpack": "^5.69.1",
+		"webpack-cli": "^4.9.2"
+	}
+}
