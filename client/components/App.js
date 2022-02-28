@@ -5,6 +5,7 @@ import AddTask from "./AddTask";
 import EditTask from "./EditTask";
 import { connect } from "react-redux";
 import { fetchTasks } from "../store/tasks";
+import ListAltRoundedIcon from "@mui/icons-material/ListAltRounded";
 
 class App extends Component {
 	componentDidMount() {
@@ -16,7 +17,9 @@ class App extends Component {
 			<Router>
 				<div id="main">
 					<h1>
-						<Link to="/">Tasks ({this.props.tasks.length})</Link>
+						<Link to="/">
+							<ListAltRoundedIcon fontSize="large" /> {this.props.tasks.length}
+						</Link>
 					</h1>
 					<Link to="/tasks/add">Add A New Task</Link>
 					<Switch>

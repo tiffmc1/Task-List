@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { fetchDeleteTask, fetchEditTask } from "../store/tasks";
 import { fetchTask, setTask } from "../store/task";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 class EditTask extends Component {
 	constructor(props) {
@@ -58,6 +59,7 @@ class EditTask extends Component {
 					>
 						Delete
 					</button>
+					<Link to="/">Cancel</Link>
 				</form>
 			</div>
 		);
