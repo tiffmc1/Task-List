@@ -1,6 +1,9 @@
 {
 	"name": "task-list",
 	"version": "1.0.0",
+	"engines": {
+		"node": "16.x"
+	},
 	"description": "",
 	"main": "server/index.js",
 	"scripts": {
@@ -8,8 +11,7 @@
 		"start-server": "nodemon server --ignore public/ --ignore client/",
 		"heroku-prebuild": "npm install --dev",
 		"build:dev": "npm run build -- --watch --mode=development",
-		"build": "webpack",
-		"heroku-postbuild": "npm run build:dev"
+		"build": "webpack"
 	},
 	"repository": {
 		"type": "git",
