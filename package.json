@@ -8,7 +8,8 @@
 		"start-server": "nodemon server --ignore public/ --ignore client/",
 		"heroku-prebuild": "npm install --dev",
 		"build:dev": "npm run build -- --watch --mode=development",
-		"build": "webpack"
+		"build": "webpack",
+		"heroku-postbuild": "npm run build:dev"
 	},
 	"repository": {
 		"type": "git",
