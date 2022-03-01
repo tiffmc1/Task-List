@@ -7,7 +7,7 @@
 		"start": "npm run start-server & npm run build:dev",
 		"start-server": "nodemon server --ignore public/ --ignore client/",
 		"heroku-prebuild": "npm install --dev",
-		"build:dev": "npm run build -- --watch --mode=development",
+		"build:dev": "npm run build -- --watch --mode=production",
 		"build": "webpack"
 	},
 	"repository": {
