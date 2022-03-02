@@ -13,7 +13,7 @@ Task Tracker was created using:
 - [React](https://reactjs.org/): For creating a highly interactive user interface
 - [Redux](https://redux.js.org/): To build, store, and manage state containers
 - [React-Redux](https://react-redux.js.org/): To bind React and Redux
-- [Node.js](https://nodejs.org/en/): As our JavaScript runtime environment
+- [Node.js](https://nodejs.org/en/): As the JavaScript runtime environment
 - [Sequelize](https://sequelize.org/): A promise-based Node.js ORM for Postgres to serve the model relations
 - [Heroku](https://www.heroku.com/): For deployment
 
